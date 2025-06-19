@@ -2,7 +2,7 @@ import './App.css'
 import About from './comonents/about/About'
 import HeroSection from './comonents/Herosection/HeroSection'
 import Navbar from './comonents/Navbar'
-import Particles from './comonents/particles/Particles'
+import Skill from './comonents/skill/Skill'
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
          {/* <Particles/> */}
          <HeroSection/>
          <About/>
+         <Skill/>
    </div>         
      </>
   )
