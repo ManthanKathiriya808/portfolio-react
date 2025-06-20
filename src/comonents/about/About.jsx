@@ -4,7 +4,7 @@ import ProfileCard from './aboutCard/ProfileCard'
 import VerticalTimeline from './TimelineWithIcon/TimelineWithIcon'
 
 // import FuzzyText from './FuzzyText';
-const About = () => {
+const Abouts = () => {
   return (
     <div className='max-w-7xl  text-white mt-1 mx-auto  py-7'>
       <div className='title text-center  flex justify-center' >
@@ -30,4 +30,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Abouts

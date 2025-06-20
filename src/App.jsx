@@ -1,23 +1,36 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import About from './comonents/about/About'
-import GithubContribution from './comonents/github/GithubContribution'
-import HeroSection from './comonents/Herosection/HeroSection'
-import Navbar from './comonents/Navbar'
-import Project from './comonents/projects/Project'
-import Skill from './comonents/skill/Skill'
+// import Contact from './comonents/contact/Contact'
+
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Project from './pages/Project'
+import Skills from './pages/Skills'
+import About from './pages/About'
 
 function App() {
 
   return (
     <>
-  <div className=''>
-         <Navbar/>
-         {/* <Particles/> */}
-         <HeroSection/>
-         <About/>
-         <Skill/>
-         <Project/>
-         <GithubContribution/>
+  <div className='font-mono'>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/about' element={<About/>} />
+      </Routes>
+      <Routes>
+        <Route path='/skill' element={<Skills/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/project' element={<Project/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/contact' element={<Contact/>}/>
+      </Routes>
+    </BrowserRouter>
+       
    </div>         
      </>
   )

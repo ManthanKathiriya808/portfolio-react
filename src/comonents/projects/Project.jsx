@@ -4,7 +4,7 @@ import ChromaGrid from './projectCard/ChromaGrid ';
 
 
 
-const Project = () => {
+const Projects = () => {
 
  const items = [
   {
@@ -22,8 +22,8 @@ const Project = () => {
     title: "Weather App",
     subtitle: "React + APi + Tailwind",
     handle: "@weather",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
     githubUrl: "https://github.com/ManthanKathiriya808/final-weather-app.git",
     liveUrl: "https://final-weather-app-nu.vercel.app/"
   },
@@ -42,8 +42,8 @@ const Project = () => {
     title: "Ecommerce App",
     subtitle: "React + Firebase + Redux + TMDB APi",
     handle: "@movie",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+      borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
     githubUrl: "https://github.com/ManthanKathiriya808/react-test.git",
     liveUrl: "https://react-test-suu3.vercel.app/"
   },
@@ -62,8 +62,8 @@ const Project = () => {
     title: "Todo App",
     subtitle: "React + Tailwind",
     handle: "@todo",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+       borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
     githubUrl: "https://github.com/ManthanKathiriya808/final-todo-react.git",
     liveUrl: "https://final-todo-react.vercel.app/"
   },
@@ -123,4 +123,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Projects

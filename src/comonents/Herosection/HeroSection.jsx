@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TrueFocus from '../TrueFocus/TrueFocus'
 import GradientText from '../gradiantText/GradientText'
 import Particles from '../particles/Particles'
@@ -17,6 +17,25 @@ const HeroSection = () => {
     );
     return () => clearTimeout(intervalId);
   }, []);
+
+    useEffect(() => {
+      const downloadCheckbox = document.getElementById('downloadTrigger')
+      if (downloadCheckbox) {
+        downloadCheckbox.addEventListener('change', function () {
+          if (this.checked) {
+            setTimeout(() => {
+              const link = document.createElement('a')
+            link.href = '/manthan_kathiriya_resume.pdf'
+            link.download = 'manthan_kathiriya_resume.pdf'
+              document.body.appendChild(link)
+              link.click()
+              document.body.removeChild(link)
+              this.checked = false // Reset checkbox for re-use
+            }, 3500) // Wait for animation
+          }
+        })
+      }
+    }, [])
 
 
   return (
@@ -69,7 +88,31 @@ pauseBetweenAnimations={1}
       <TextTransition className='text-4xl font-sans  italic' style={{color:"#C27AFF"}} springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
     </h1>
 </div>
-
+  <div className="container mt-3">
+                <label className="label" id="downloadLabel">
+                    <input type="checkbox" className="input" id="downloadTrigger" />
+                    <span className="circle">
+                    <svg
+                        className="icon"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M12 19V5m0 14-4-4m4 4 4-4"
+                        ></path>
+                    </svg>
+                    <div className="square"></div>
+                    </span>
+                    <p className="title">Download Resume</p>
+                    <p className="title">Open</p>
+                </label>
+                </div>
 
 
       </div>
@@ -83,7 +126,7 @@ pauseBetweenAnimations={1}
     forceHoverState={false}
   />
 <div className='absolute '  style={{transform: "translate(-50%, -50%) " , top:"50%" , left: "50%",width:"350px", height:"350px"}}>
-      <img src="https://bt-portfolio-zeta.vercel.app/img/WhatsApp%20Image%202024-09-11%20at%204.27.00%20PM.jpeg"  className='rounded-full p-2' alt="" />
+      <img src="my2.jpg"  className='rounded-full p-2' alt="" />
 </div>
 </div>
     </div>

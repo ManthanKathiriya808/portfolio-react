@@ -2,7 +2,7 @@ import React from 'react'
 import FuzzyText from '../fuzytext/FuzzyText'
 import GitHubCalendar from 'react-github-calendar'
 
-const GithubContribution = () => {
+const GithubContributions = () => {
   return (
     <div>
           <div className='max-w-7xl  text-white mt-1 mx-auto  py-7'>
@@ -24,7 +24,11 @@ const GithubContribution = () => {
         username="ManthanKathiriya808"
         blockSize={15}
         blockMargin={5}
-    
+       theme={{
+            light: ['#eeeaf6', '#e0c4ff', '#cb9eff', '#b477ff', '#C27AFF'],
+            dark: ['#1f1b2e', '#6c4ab6', '#8855e3', '#a570ff', '#C27AFF'],
+          }}
+
         fontSize={14}
       />
     
@@ -36,4 +40,4 @@ const GithubContribution = () => {
   )
 }
 
-export default GithubContribution
+export default GithubContributions

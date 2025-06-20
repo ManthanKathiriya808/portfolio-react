@@ -2,6 +2,7 @@
 // import { X, Facebook, Instagram } from "iconoir-react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaGithub } from "react-icons/fa";
 
 export default function ProfileCard() {
   return (
@@ -14,9 +15,9 @@ export default function ProfileCard() {
     <p>Software Developer</p>
   </div>
  <div className="flex gap-6 text-2xl">
-     <a class=" text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 nav-hover" href="#"><i class="fa-brands fa-linkedin"></i></a>
-  <a class=" text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 nav-hover " href="#"><i class="fa-brands fa-instagram"></i></a>
-  <a class="  text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 nav-hover" href="#"><i class="fa-brands fa-facebook"></i></a>
+     <a class=" text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 nav-hover" href="https://www.linkedin.com/in/manthan-kathiriya/"><i class="fa-brands fa-linkedin"></i></a>
+  <a class=" text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 nav-hover "      href="https://www.instagram.com/manthan_kathiriya_9_9_9/"><i class="fa-brands fa-instagram"></i></a>
+  <a class="  text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 nav-hover"     href="https://github.com/ManthanKathiriya808"> <i class="fa-brands fa-github"></i></a>
 
  </div>
 </div>
