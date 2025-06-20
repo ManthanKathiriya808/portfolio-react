@@ -1,5 +1,6 @@
 import './App.css'
 import About from './comonents/about/About'
+import GithubContribution from './comonents/github/GithubContribution'
 import HeroSection from './comonents/Herosection/HeroSection'
 import Navbar from './comonents/Navbar'
 import Project from './comonents/projects/Project'
@@ -16,6 +17,7 @@ function App() {
          <About/>
          <Skill/>
          <Project/>
+         <GithubContribution/>
    </div>         
      </>
   )
