@@ -139,3 +139,6 @@ pauseBetweenAnimations={1}
 }
 
 export default HeroSection
+
+
+// hero section
